@@ -63,10 +63,31 @@ const productSchema = mongoose.Schema(
       required: true,
       default: 0,
     },
+    price_hour: {
+      type: Number,
+      required: true,
+      default: 0,
+    },
     countInStock: {
       type: Number,
       required: true,
       default: 0,
+    },
+    lat: {
+      type: Number,
+      required: true,
+    },
+    lng: {
+      type: Number,
+      required: true,
+    },
+    popular: {
+      type: Boolean,
+      default: false,
+    },
+    good_price: {
+      type: Boolean,
+      default: false,
     },
   },
   {
